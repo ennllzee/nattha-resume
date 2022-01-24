@@ -19,13 +19,13 @@ const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     profile: {
       backgroundColor: "#ab003c",
-      minHeight: "100vh",
+      height: "100vh",
     },
     white: {
       color: "white",
     },
     tab: {
-      minHeight: "100vh",
+      height: "100vh",
     },
     now: {
       color: "#ffac33",

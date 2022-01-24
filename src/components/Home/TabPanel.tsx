@@ -12,6 +12,7 @@ import Works from '../Works/Works';
 import Contact from '../Contact/Contact';
 import Interests from '../Interests/Interests';
 import LangSet from '../../models/LangSet';
+import { Grid } from '@material-ui/core';
 
 
 function TabPanel(props: any) {
@@ -68,7 +69,7 @@ export default function Page({langSet} : PageProp) {
   };
 
   return (
-    <div className={classes.root}>
+    <Grid className={classes.root}>
       <AppBar position="static" color="default">
         <Tabs
           value={value}
@@ -79,10 +80,10 @@ export default function Page({langSet} : PageProp) {
           scrollButtons="auto"
         >
           <Tab label={langSet.education.title} {...a11yProps(0)} />
-          <Tab label={langSet.skill} {...a11yProps(1)} />
-          <Tab label={langSet.work} {...a11yProps(2)} />
-          <Tab label={langSet.interest} {...a11yProps(3)} />
-          <Tab label={langSet.contact} {...a11yProps(4)} />
+          <Tab label={langSet.skill.title} {...a11yProps(1)} />
+          <Tab label={langSet.work.title} {...a11yProps(2)} />
+          <Tab label={langSet.interest.title} {...a11yProps(3)} />
+          <Tab label={langSet.contact.title} {...a11yProps(4)} />
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
@@ -100,6 +101,6 @@ export default function Page({langSet} : PageProp) {
       <TabPanel value={value} index={4}>
         <Contact langSet={langSet}/>
       </TabPanel>
-    </div>
+    </Grid>
   );
 }

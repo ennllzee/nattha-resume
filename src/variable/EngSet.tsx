@@ -17,7 +17,7 @@ const EngSet: LangSet = {
       title: "Coding",
       lang: {
         title: "Programming Languages",
-        list: "Java, Python, C#, C++, JavaScript, TypeScript, HTML, SQL",
+        list: "Java, Python, C#, C++, JavaScript, TypeScript, HTML, CSS, SQL",
       },
       frontend: {
         title: "Front-End Framework",
@@ -38,9 +38,10 @@ const EngSet: LangSet = {
     project: {
       title: "Hospital Care Guide Platform",
       description:
-        "Web Application for supporting Care Guide Service",
+        `Web Application for using on electronic communication devices, especially on smartphones. The objectives are driving Hospital Care Guide Service. This platform works as the connector between patients and guides who take care of them at hospital.`,
       reward: {
-        title: "Huawei Cloud Developer Contest Of Student Group",
+        title: "Contest",
+        name: "Huawei Cloud Developer Contest Of Student Group",
         description: "1st Runner-up",
       },
     },
