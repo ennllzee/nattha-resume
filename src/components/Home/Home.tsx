@@ -2,13 +2,19 @@ import {
   Button,
   createStyles,
   Grid,
+  Hidden,
   IconButton,
   Link,
   makeStyles,
   Theme,
   Typography,
 } from "@material-ui/core";
-import { Facebook, Instagram, Language } from "@mui/icons-material";
+import {
+  Facebook,
+  Instagram,
+  KeyboardArrowDown,
+  LocationOn,
+} from "@mui/icons-material";
 import { useEffect, useState } from "react";
 import LangSet from "../../models/LangSet";
 import EngSet from "../../variable/EngSet";
@@ -29,7 +35,11 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     now: {
       color: "#ffac33",
-    }
+    },
+    icon: {
+      marginBottom: -5,
+      color: "white",
+    },
   })
 );
 
@@ -46,6 +56,11 @@ function Home() {
     }
   }, [lang]);
 
+  const jump = () => {
+    const resume = document.getElementById("resume")
+    resume?.scrollIntoView({behavior: 'smooth'})
+  }
+
   return (
     <Grid container justify="center" alignItems="center">
       <Grid item xs={12} md={12} lg={4}>
@@ -58,13 +73,20 @@ function Home() {
         >
           <Grid item></Grid>
           <Grid item>
-            <Grid container direction="column">
-              <Grid item>
+            <Grid container direction="row">
+              <Grid item xs={12} md={12} lg={12}>
                 <Typography variant="h1" className={classes.white}>
                   {set.name}
                 </Typography>
               </Grid>
-              <Grid item>
+              <Grid item xs={12} md={12} lg={12}>
+                <Typography variant="h5" className={classes.white}>
+                  <LocationOn className={classes.icon} />
+                  {"\t"}
+                  {set.location}
+                </Typography>
+              </Grid>
+              <Grid item xs={12} md={12} lg={12}>
                 <Link
                   href="https://web.facebook.com/palmmy.tonpalm"
                   target="_blank"
@@ -90,6 +112,19 @@ function Home() {
                   </IconButton>
                 </Link>
               </Grid>
+              <Hidden lgUp={true}>
+                <Grid
+                  item
+                  xs={12}
+                  md={12}
+                  lg={undefined}
+                  style={{ padding: 0 }}
+                >
+                    <Button onClick={jump} className={classes.white}>
+                      resume <KeyboardArrowDown />
+                    </Button>
+                </Grid>
+              </Hidden>
             </Grid>
           </Grid>
           <Grid item>
@@ -126,7 +161,7 @@ function Home() {
           </Grid>
         </Grid>
       </Grid>
-      <Grid item xs={12} md={12} lg={8} className={classes.tab}>
+      <Grid item xs={12} md={12} lg={8} className={classes.tab} id="resume">
         <Page langSet={set} />
       </Grid>
     </Grid>

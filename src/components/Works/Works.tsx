@@ -39,9 +39,10 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     reward: {
       marginBottom: -5,
+      color: "#ffac33",
     },
     box: {
-      backgroundColor: "#eeeeee",
+      backgroundColor: "#FAFAFA",
       borderRadius: 8,
       padding: 8,
     },
@@ -79,7 +80,7 @@ function Works({ langSet }: WorksProp) {
           <Grid item xs={12} md={12} lg={12}>
             <Divider light />
           </Grid>
-          <Grid item xs={6} md={6} lg={4}>
+          <Grid item xs={6} md={6} lg={3}>
             <CardMedia
               className={classes.media}
               image={
@@ -88,7 +89,7 @@ function Works({ langSet }: WorksProp) {
               title="Take Care App"
             />
           </Grid>
-          <Grid item xs={12} md={12} lg={8}>
+          <Grid item xs={12} md={12} lg={9}>
             <Grid container direction="column" spacing={1}>
               <Grid item>
                 <Typography variant="h6" align="left">

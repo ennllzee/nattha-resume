@@ -5,6 +5,7 @@ import WorkForm from "./WorkForm";
 
 interface LangSet{
     name : string
+    location : string
     education : {
         title : string
         university : EducationForm
