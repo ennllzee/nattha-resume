@@ -1,19 +1,19 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "NATTHA's RESUME",
+  "name": "NATTHA's RESUME",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "https://bn1305files.storage.live.com/y4mi8XXb8DyFfyrEL61rD-3ZZ0iYIJPc2kN0uj3t2bPRVECcUzd6cvi_ZDF2LAL1HAYZ40rtYnqs1BRWan-f3WVaPzloYIT27Q4scKMub271iy-ln7PbPqILN-U56w4LWfE5Wzwz-dGsqWu4W4EIOvu_U--oylTWzdrfKuVFf5snE8Wzg1gD6zXCVHnvQouYS8x?width=2048&height=2048&cropmode=none",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "https://bn1305files.storage.live.com/y4mi8XXb8DyFfyrEL61rD-3ZZ0iYIJPc2kN0uj3t2bPRVECcUzd6cvi_ZDF2LAL1HAYZ40rtYnqs1BRWan-f3WVaPzloYIT27Q4scKMub271iy-ln7PbPqILN-U56w4LWfE5Wzwz-dGsqWu4W4EIOvu_U--oylTWzdrfKuVFf5snE8Wzg1gD6zXCVHnvQouYS8x?width=2048&height=2048&cropmode=none",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "https://bn1305files.storage.live.com/y4mi8XXb8DyFfyrEL61rD-3ZZ0iYIJPc2kN0uj3t2bPRVECcUzd6cvi_ZDF2LAL1HAYZ40rtYnqs1BRWan-f3WVaPzloYIT27Q4scKMub271iy-ln7PbPqILN-U56w4LWfE5Wzwz-dGsqWu4W4EIOvu_U--oylTWzdrfKuVFf5snE8Wzg1gD6zXCVHnvQouYS8x?width=2048&height=2048&cropmode=none",
       "type": "image/png",
       "sizes": "512x512"
     }
