@@ -14,6 +14,8 @@ interface LangSet{
         title : string
         coding : CodingForm
         lang : LangForm
+        editor : LangForm
+        office : LangForm
     }
     work : {
         title : string

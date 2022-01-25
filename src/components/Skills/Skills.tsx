@@ -6,7 +6,7 @@ import {
   Theme,
   Typography,
 } from "@material-ui/core";
-import { Code, Language } from "@mui/icons-material";
+import { Code, Edit, Keyboard, Language } from "@mui/icons-material";
 import LangSet from "../../models/LangSet";
 
 interface SkilsProp {
@@ -110,6 +110,58 @@ function Skils({ langSet }: SkilsProp) {
           <Grid item xs={10} md={11} lg={11}>
             <Typography variant="h6" align="left">
               {langSet.skill.lang.list}
+            </Typography>
+          </Grid>
+          <Grid item xs={2} md={1} lg={1}></Grid>
+          <Grid item xs={10} md={11} lg={11}>
+            <Divider light />
+          </Grid>
+        </Grid>
+      </Grid>
+      <Grid item xs={12} md={12} lg={12}>
+        <Grid container spacing={2} direction="row" alignItems="center">
+          <Grid item xs={2} md={1} lg={1} style={{ padding: 0 }}>
+            <Edit className={classes.icon} />
+          </Grid>
+          <Grid item xs={10} md={11} lg={11}>
+            <Typography variant="h4" align="left">
+              {langSet.skill.editor.title}
+            </Typography>
+          </Grid>
+          <Grid item xs={2} md={1} lg={1}></Grid>
+          <Grid item xs={10} md={11} lg={11}>
+            <Divider light />
+          </Grid>
+          <Grid item xs={2} md={1} lg={1}></Grid>
+          <Grid item xs={10} md={11} lg={11}>
+            <Typography variant="h6" align="left">
+              {langSet.skill.editor.list}
+            </Typography>
+          </Grid>
+          <Grid item xs={2} md={1} lg={1}></Grid>
+          <Grid item xs={10} md={11} lg={11}>
+            <Divider light />
+          </Grid>
+        </Grid>
+      </Grid>
+      <Grid item xs={12} md={12} lg={12}>
+        <Grid container spacing={2} direction="row" alignItems="center">
+          <Grid item xs={2} md={1} lg={1} style={{ padding: 0 }}>
+            <Keyboard className={classes.icon} />
+          </Grid>
+          <Grid item xs={10} md={11} lg={11}>
+            <Typography variant="h4" align="left">
+              {langSet.skill.office.title}
+            </Typography>
+          </Grid>
+          <Grid item xs={2} md={1} lg={1}></Grid>
+          <Grid item xs={10} md={11} lg={11}>
+            <Divider light />
+          </Grid>
+          <Grid item xs={2} md={1} lg={1}></Grid>
+          <Grid item xs={10} md={11} lg={11}>
+            <Typography variant="h6" align="left">
+              {langSet.skill.office.list}
             </Typography>
           </Grid>
           <Grid item xs={2} md={1} lg={1}></Grid>

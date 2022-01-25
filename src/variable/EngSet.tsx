@@ -33,13 +33,21 @@ const EngSet: LangSet = {
       title: "Languages",
       list: "Thai, English, Basic Korean, Basic Japanese",
     },
+    editor: {
+      title: "Photo and Video Editors",
+      list: "Adobe Photoshop, Adobe Lightroom, Adobe Premiere Pro",
+    },
+    office: {
+      title: "Office Software",
+      list: "Microsoft Office (Word, PowerPoint, Excel)",
+    }
   },
   work: {
     title: "WORKS",
     project: {
       title: "Hospital Care Guide Platform",
       description:
-        `Web Application for using on electronic communication devices, especially on smartphones. The objectives are driving Hospital Care Guide Service. This platform works as the connector between patients and guides who take care of them at hospital.`,
+        `Web Application for using on electronic communication devices, especially on smartphones. The objectives are driving Hospital Care Guide Service. This platform works as the connector between patients and guides who take care of them at hospital. \n(Ps. Currently, This platform is not activated.)`,
       reward: {
         title: "Contest",
         name: "Huawei Cloud Developer Contest Of Student Group",

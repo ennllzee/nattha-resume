@@ -114,7 +114,7 @@ function Works({ langSet }: WorksProp) {
                     </IconButton>
                   </Link>
                   <Link
-                    href="https://www.youtube.com/watch?v=c0tEsXE78jM"
+                    href="https://www.canva.com/design/DAEtvS8qn8I/GZ5smuCiYEsIqSWE9TWAlg/view?website#2"
                     target="_blank"
                   >
                     <IconButton

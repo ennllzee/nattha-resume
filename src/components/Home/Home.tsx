@@ -1,6 +1,8 @@
 import {
   Button,
+  CardMedia,
   createStyles,
+  Divider,
   Grid,
   Hidden,
   IconButton,
@@ -25,13 +27,14 @@ const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     profile: {
       backgroundColor: "#ab003c",
-      height: "100vh",
+      minHeight: "100vh",
     },
     white: {
       color: "white",
     },
     tab: {
       height: "100vh",
+      overflow: "auto",
     },
     now: {
       color: "#ffac33",
@@ -39,6 +42,11 @@ const useStyles = makeStyles((theme: Theme) =>
     icon: {
       marginBottom: -5,
       color: "white",
+    },
+    media: {
+      height: 0,
+      paddingTop: "100%",
+      borderRadius: 360,
     },
   })
 );
@@ -57,9 +65,9 @@ function Home() {
   }, [lang]);
 
   const jump = () => {
-    const resume = document.getElementById("resume")
-    resume?.scrollIntoView({behavior: 'smooth'})
-  }
+    const resume = document.getElementById("resume");
+    resume?.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <Grid container justify="center" alignItems="center">
@@ -73,7 +81,16 @@ function Home() {
         >
           <Grid item></Grid>
           <Grid item>
-            <Grid container direction="row">
+            <Grid container direction="row" justify="center">
+              <Grid item xs={5} md={5} lg={5} style={{margin: 5}}>
+                <CardMedia
+                  className={classes.media}
+                  image={
+                    "https://bn1305files.storage.live.com/y4m4sWbwy36ra2gGyvyRliMpkwIESoWPHr_OEjfpcxWy5CViUz2cS4Ykthbp79rw-ftqHvDg4wlPTIWIlzf3yN0zfSMXqASIY8t5IJ54pD_w_NULCjXLMMDgRcMrLDCCb1Uj6EHqkbzSma1RfrPfNqoQOY52MFmPdQUlq-ygXR1JCXxln-K-_qZtKbCPIZZMrv6?width=4000&height=4000&cropmode=none"
+                  }
+                  title="Take Care App"
+                />
+              </Grid>
               <Grid item xs={12} md={12} lg={12}>
                 <Typography variant="h1" className={classes.white}>
                   {set.name}
@@ -120,9 +137,9 @@ function Home() {
                   lg={undefined}
                   style={{ padding: 0 }}
                 >
-                    <Button onClick={jump} className={classes.white}>
-                      resume <KeyboardArrowDown />
-                    </Button>
+                  <Button onClick={jump} className={classes.white}>
+                    resume <KeyboardArrowDown />
+                  </Button>
                 </Grid>
               </Hidden>
             </Grid>
