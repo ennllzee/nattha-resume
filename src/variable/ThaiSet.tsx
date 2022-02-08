@@ -2,7 +2,7 @@ import LangSet from "../models/LangSet";
 
 const ThaiSet: LangSet = {
   name: "ณัฏฐา ไชยะรินทร์",
-  location: "แพร่ - เชียงใหม่, ประเทศไทย",
+  location: "ประเทศไทย",
   education: {
     title: "การศึกษา",
     university: {

@@ -2,7 +2,7 @@ import LangSet from "../models/LangSet";
 
 const EngSet: LangSet = {
   name: "NATTHA CHAIYARIN",
-  location: "Phrae - Chiangmai, Thailand",
+  location: "Thailand",
   education: {
     title: "EDUCATION",
     university: {
