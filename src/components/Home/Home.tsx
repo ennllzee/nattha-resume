@@ -2,7 +2,6 @@ import {
   Button,
   CardMedia,
   createStyles,
-  Divider,
   Grid,
   Hidden,
   IconButton,
