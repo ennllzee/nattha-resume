@@ -22,11 +22,11 @@ const ThaiSet: LangSet = {
       },
       frontend: {
         title: "Front-End Framework",
-        list: "React, jQuery",
+        list: "React",
       },
       backend: {
         title: "Back-End Framework",
-        list: ".NET, Express.js",
+        list: ".NET, Express.js, NodeJS",
       },
     },
     lang: {
