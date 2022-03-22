@@ -71,6 +71,7 @@ const ThaiSet: LangSet = {
     tel: "088 432 4988",
     email: "nattar_c@hotmail.com",
   },
+  download: "ดาวน์โหลดไฟล์ PDF"
 };
 
 export default ThaiSet;

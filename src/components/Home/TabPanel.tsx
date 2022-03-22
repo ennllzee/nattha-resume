@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
@@ -12,7 +12,7 @@ import Works from '../Works/Works';
 import Contact from '../Contact/Contact';
 import Interests from '../Interests/Interests';
 import LangSet from '../../models/LangSet';
-import { Grid } from '@material-ui/core';
+import { Grid, Link } from '@material-ui/core';
 
 
 function TabPanel(props: any) {
@@ -65,7 +65,9 @@ export default function Page({langSet} : PageProp) {
   const [value, setValue] = useState<number>(0);
 
   const handleChange = (event: any, newValue: any) => {
-    setValue(newValue);
+    if(newValue !== 5){
+      setValue(newValue);
+    }
   };
 
   return (
@@ -84,6 +86,7 @@ export default function Page({langSet} : PageProp) {
           <Tab label={langSet.work.title} {...a11yProps(2)} />
           <Tab label={langSet.interest.title} {...a11yProps(3)} />
           <Tab label={langSet.contact.title} {...a11yProps(4)} />
+          <Link href={`${process.env.PUBLIC_URL + "/nattha_resume.pdf"}`} target="_blank" download underline="none" color="inherit"><Tab label={langSet.download} /></Link>  
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
@@ -99,6 +102,9 @@ export default function Page({langSet} : PageProp) {
         <Interests langSet={langSet}/>
       </TabPanel>
       <TabPanel value={value} index={4}>
+        <Contact langSet={langSet}/>
+      </TabPanel>
+      <TabPanel value={value} index={5}>
         <Contact langSet={langSet}/>
       </TabPanel>
     </Grid>

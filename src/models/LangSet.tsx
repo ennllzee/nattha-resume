@@ -31,6 +31,7 @@ interface LangSet{
         tel : string
         email : string
     }
+    download: string
 }
 
 export default LangSet

@@ -71,6 +71,7 @@ const EngSet: LangSet = {
     tel: "088 432 4988",
     email: "nattar_c@hotmail.com",
   },
+  download: "Download as PDF"
 };
 
 export default EngSet;
