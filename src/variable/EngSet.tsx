@@ -8,7 +8,7 @@ const EngSet: LangSet = {
     university: {
       degree: "Bachelor Degree",
       from: "2018",
-      to: "present",
+      to: "2022 (Graduated)",
       name: "Computer Engineering, Chiang Mai University",
     },
   },
