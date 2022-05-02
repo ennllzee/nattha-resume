@@ -57,8 +57,8 @@ function Education({ langSet }: EducationProp) {
               {langSet.education.university.name}
             </Typography>
             <Typography variant="h6" align="left">
-              ({langSet.education.university.from}-
-              {langSet.education.university.to})
+              {langSet.education.university.from}-
+              {langSet.education.university.to}
             </Typography>
           </Grid>
           <Grid item xs={2} md={1} lg={1}></Grid>
