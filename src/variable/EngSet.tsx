@@ -43,13 +43,13 @@ const EngSet: LangSet = {
     }
   },
   work: {
-    title: "PROJECTS",
+    title: "WORKS",
     project: {
       title: "Hospital Care Guide Platform",
       description:
         `Web Application for using on electronic communication devices, especially on smartphones. The objectives are driving Hospital Care Guide Service. This platform works as the connector between patients and guides who take care of them at hospital. \n(Ps. Currently, This platform is not activated.)`,
       reward: {
-        title: "Contest",
+        title: "Reward",
         name: "Huawei Cloud Developer Contest Of Student Group",
         description: "1st Runner-up",
       },
